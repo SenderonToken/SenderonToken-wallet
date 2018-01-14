@@ -1,0 +1,667 @@
+
+
+html {
+    font-size: 1em;
+}
+
+html, button, input, select, textarea {
+    color: #222;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+
+
+textarea {
+	resize: vertical;
+}
+body {
+	font-family:'Roboto', sans-serif;
+    margin: 0;
+    background: white;
+}
+
+.container {
+	width: 100%;
+	height:auto;
+}
+
+.bg-contain{
+    height: 600px;
+    background: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    text-align: center;
+    color: white;
+    background-color: aqua;
+    min-height: 690px;
+    
+}
+
+.tpoverlay{
+    background-color: rgba(26,17,34,.8);
+    width:100%;
+    height: 100%;
+}
+
+.bg-contain>div{
+    margin-bottom: 75px;
+}
+
+.bg-contain>div>span{
+    margin: 0px 12px;
+    
+}
+
+.auth{
+    padding:0 14px;
+    border: 1px solid white;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+nav {
+    position:fixed;
+    z-index: 3;
+    text-align: right;
+    width:100%;
+    height:85px;
+    padding-right: 25px;
+    font-size: 19px;
+    display: block;
+   
+
+}
+
+
+.nav-onload{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nav-scroll{
+    height:70px;
+    line-height: 70px;
+    background-color: white;
+    border-bottom: 1px solid #132535;
+}
+
+.nav-element{
+    margin:auto 7px;
+    cursor: pointer;
+}
+
+a {
+    color: rgba(255,206,143,1);
+    text-decoration: none;
+}
+
+.nav-special{
+    padding: 3px 30px;
+    background-color: #132535;
+    border-radius: 15px;
+    color: rgba(255,206,143,1) !important; 
+}
+.nav-special>a{
+    color:rgba(255,206,143,1);
+}
+
+.nav-element-scroll{
+     padding: 23px 30px;
+    border-radius: 0px;
+    border: none;
+}
+
+.info-section{
+    min-height: 450px;
+    width:100%;
+    padding-top: 45px;
+    padding-left:7%;
+    padding-right:7%;
+    background-color: #f1f1f1;
+}
+.info-section2{
+    min-height: 350px;
+    width:100%;
+    padding-top: 45px;
+    padding-left:7%;
+    padding-right:7%;
+    text-align: center;
+}
+
+.wave-heading1{
+    font-size: 32px;
+    text-align: center;
+}
+.wave-heading2{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.wave-heading3{
+    font-size: 23px;
+    text-align: center;
+    overflow-y: 
+}
+
+footer{
+    min-height: 100px;
+    background-color: rgba(26,17,34,1);
+    color: white;
+}
+
+#confrlogo{
+    padding-top: 300px;
+    margin-bottom: 50px;
+}
+#btchue{
+    float: left;
+    width: 30%;
+    border-radius: 20px;
+    margin-right:3%;
+}
+.btcdets{
+    margin-right:10%;
+    font-size: 17px;
+     text-align: justify;
+}
+
+
+
+.awesome-container{
+    width:25%;
+    display:inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: 65px;
+    vertical-align: top;
+}
+.awesome-container>span{
+    font-size: 19px;
+    font-weight: bold;
+}
+.awesome-main{
+    color: white;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: #E78200;
+    height:72px;
+    width: 72px;
+    border-radius: 50%;
+}
+.last{
+     margin-right: 0px;
+}
+
+.abtconfr{
+    text-align:center;
+}
+.trade{
+    margin-top:50px;
+}
+
+.awesome-main2{
+    color: #E78200;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    padding: 35px 0px;
+    text-align: center;
+    background-color: white;
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px dashed #E78200;
+}
+
+.c2{
+    margin-bottom: 80px;
+}
+
+.c3{
+    border: none;
+}
+.table{
+    text-align: center;
+    margin-bottom: 25px;
+}
+table{
+    margin: 0 auto;
+    width: 60%;
+}
+
+tr{
+    line-height: 24px;
+}
+
+thead{
+    background-color: #E78200;
+}
+table>tbody>tr:nth-of-type(odd){
+    background-color: #f1f1f1;
+}
+
+.inline{
+    display:inline-block;
+}
+.social-media{
+    float:right;
+    margin-right: 25px;
+    margin-top:17px;
+}
+
+.fb,.bt,.tt{
+    height:65px;
+    width:65px;
+    border-radius: 50%;
+    text-align: center;
+    padding:8.5px 0px;
+    margin-right:15px;
+}
+
+.fb{
+    background-color: white;
+}
+.fa-reddit{
+    color:#FF4500;
+}
+.fa-twitter{
+    color:white;
+}
+.tt{
+    background-color: #1DA1F2;
+}
+.bt{
+    background-color: white;
+    border: 1px solid #E78200;
+    color: #E78200;
+}
+#copyright{
+    margin-top: 36px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    width:32px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 1px 16px;
+    background-color: rgba(26,17,34,1);;
+    color: white;
+    text-align: center;
+}
+
+.modal-header>h2{
+    margin: 4px 10px;
+    padding:0px;
+    display: inline-block;
+}
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+/* Modal Footer */
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 40px auto; 
+    padding: 0;
+    width: 360px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal-body div {
+    margin: 35px 10px;
+   
+}
+
+.modal-body input{
+     width: 90%;
+    height: 35px;
+    background-color: #F2F3F4;
+    border-radius: 4px;
+    border: 1px solid #999;
+    vertical-align: baseline;
+    padding: 0px 5px;
+    font-size: 15px;
+}
+
+.modal-body input:hover,
+.modal-body input:focus {
+    background-color: white;
+}
+.sbutton{
+    font-size: 20px;
+    padding: 3px 12px;
+    color:white;
+     background-color: rgba(26,17,34,1);;
+    border:none;
+    border-radius: 25px;
+    cursor:pointer;
+    
+}
+ span.error {
+        color: red;
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 1px;
+        width: auto;
+        display: block;
+    }
+    
+    .error{
+        color: red;
+    }
+    .message{
+        color: red;
+        font-size: 12px;
+    }
+.bg-contain1{
+    height:200px;
+    background: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding-top:80px;
+    
+}
+    
+.dash{
+    height:55px;
+    line-height: 55px;
+    background-color: white;
+    border-bottom: 1px solid #132535;
+    right: 1px;
+    width:80%;
+}
+.nav-element-scroll1{
+     padding: 15.5px 30px;
+
+    border: none;
+}
+
+.view{
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 25%;
+    min-height: 400px;
+}
+
+.side-nav{
+    min-width:20%;
+    max-width:30%;
+    background-color: #132535;
+    margin-top: 55px;
+    color:rgba(255,206,143,1) !important;
+    font-size: 20px;
+    position:fixed;
+    left:1px;
+}
+#confrlogodash{
+    margin-left: 3%;
+    float: left;
+    z-index: 8;
+    height: 55px;
+    
+}
+.side-nav>div{
+    width: 100%;
+    padding: 25px 20px;
+    margin: 0px 0px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+
+}
+
+.side-nav>div:hover, .side-nav>div:hover a{
+   background-color: rgba(255,206,143,1);
+   color: #132535 !important;
+}
+.info-section-dash{
+    min-height: 450px;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-top: 15px;
+}
+.others{
+    min-height: 600px;
+    
+
+}
+
+.side-nav-link{
+    margin-left: 10px;
+}
+
+.dashboard-menu-item{
+    width:29%;
+    border-radius: 15px;
+    background-color: #E78200;
+    color: white;
+    margin-left: 3%;
+    margin-top:40px;
+    cursor: pointer;
+}
+.dashboard-menu-item>div{
+    padding: 15px 15px;
+    height:80px;
+}
+
+.my-account-button {
+    background-color: #132535;
+    color:white;
+    padding: 10px;
+    cursor: pointer;
+}
+#f2asecret{
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+}
+
+#seed{
+    border: 1px solid black;
+    margin: 20px 0px;
+    padding: 10px;
+    font-size: 13px;
+}
+.tabledash{
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
+}
+.notice{
+    color:red;
+    font-size:13px;
+}
+.tabledash>tbody>tr:nth-of-type(odd){
+    background-color: white;
+}
+.dashtablecont{
+    text-align: center;
+    margin-top: 30px;
+}
+.dashtablecont>span{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#navbutton{
+    display: none;
+    position: fixed;
+    right:10px;
+    top:10px;
+    color: #E78200;
+    z-index: 5;
+    background-color: white;
+}
+.navcontainer1{
+
+}
+
+.dup{
+    font-size: 14px;
+    padding: 8px 15px;
+}
+#navb2{
+   display: none;
+    position: fixed;
+    left:10px;
+    top:10px;
+    color: #E78200;
+    z-index: 5;
+     background-color: white;
+}
+@media screen and (max-width: 808px) {
+    nav{
+        display:none;
+        position: fixed;
+        right:1px;
+        background-color: black;
+        width:220px;
+        min-height: 400px;
+    }
+   
+    #navbutton,#navb2{
+        display: block;
+    }
+    #confrlogo{
+        margin-left:35px;
+    }
+    .nav-element{
+        display: block;
+        margin-top: 15px;
+    }
+    .navcontainer1{
+        text-align: center;
+    }
+    #confrlogodash {
+        margin-left: 0px;
+        float: none;
+    }
+    .side-nav{
+        margin-top: 0px;
+        max-width: 300px;
+        display:none;
+    }
+    .view{
+         margin-top: 0px;
+        margin-left:0px;
+        width:100%
+    }
+    .dashtablecont{
+        overflow-x: scroll;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .awesome-container{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .awesome-container > span {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .c2{
+        min-width:43%;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    
+     .c3{
+       padding-bottom: 0px;
+    }
+    
+    .info-section {
+        padding-top: 45px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .awesome-main2 {
+        
+        height: auto;
+        width: auto;
+
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    .modal-content {
+        width: 280px;
+    }
+}

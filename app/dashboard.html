@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Senderon Wallet</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> 
+  </head>
+  <body>
+  <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+  <script src="js/senderon.js"></script>
+ <script src="js/jquery-ui.min.js"></script>
+
+
+
+
+
+
+
+<div class = "container">
+    <div class="navcontainer navcontainer1">
+    
+    <div id="navbutton"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+     <img src="img/send.jpg" id="confrlogodash">
+    <div id="navb2"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+    <nav class="nav-scroll dash">
+       
+        <span id="ico" class="nav-element nav-special nav-element-scroll1 dup">1SDRN = ..USD</span>
+       
+        <span id="home" class="nav-element nav-special nav-element-scroll1 dup">LOGOUT</span>
+      
+    </nav>
+</div>
+    <div class="side-nav inline">
+        <div><i class="fa fa-credit-card fa-2x"  aria-hidden="true"></i><span class="side-nav-link">Dashboard</span></div>
+       
+    </div>
+   
+    <div class ="view inline">
+        
+        <div>
+            <span class="nav-element nav-special dup" id="createwallet">...</span>
+        </div>
+        <div class="info-section-dash">
+            <div class="msg"></div>
+            <div class="dashboard-menu">
+                <div class="dashboard-menu-item inline">
+                <div class="inline"><i class="fa fa-money fa-3x" aria-hidden="true"></i></div>
+                <div class="inline">
+                    <div id="sdrnbalm">0.00</div>
+                    <div >Senderon | Balance</div>
+                </div>
+            </div>
+            <div class="dashboard-menu-item inline">
+                <div class="inline"><i class="fa fa-google-wallet fa-3x" aria-hidden="true"></i></div>
+                <div class="inline">
+                    <div id="ethbalm">0.00</div>
+                    <div >Ether | Balance</div>
+                </div>
+            </div> 
+            <div class="dashboard-menu-item inline">
+                <div class="inline"><i class="fa fa-dollar fa-3x" aria-hidden="true"></i></div>
+                <div class="inline">
+                    <div >USD __</div>
+                    <div >DOLLAR</div>
+                </div>
+            </div>
+            <div class="dashboard-menu-item inline sendsend">
+                <div class="inline"><i class="fa fa-database fa-3x" aria-hidden="true"></i></div>
+                <div class="inline">
+                    <div >Send</div>
+                    <div >Senderon Token</div>
+                </div>
+            </div>
+            
+            
+            
+            
+            </div>
+        </div>
+    
+    </div>
+    
+    <footer>
+        <div class="wave-heading3 inline" id="copyright"> 
+            Copyright &copy 2018 SenderonToken All rights reserved
+        </div>
+        <div class="social-media inline">
+            <div class="inline fb">
+                <a href="https://www.reddit.com/r/Senderon/"><i class="fa fa-reddit fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="inline tt">
+                <a href="https://twitter.com/SenderonToken"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="inline bt">
+                <a href="https://bitcointalk.org/index.php?topic=2116446.0"><i class="fa fa-bitcoin fa-3x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    
+    </footer>
+
+</div>
+
+
+<div id="paymentModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+     <div class="modal-header">
+        <span class="close">X</span>
+        <h2>Send Payment</h2>
+      </div>
+      <div class="modal-body">
+          <br>
+          <form id="sendform">
+              <div class="notice" id="sendnote"></div>
+              <div>
+                  <label for="recadd">Recipient's Address</label>
+            <input id="recadd" class="forminput" type="text" placeholder="Enter Recipient Address">
+             </div>
+              <div>
+                  <label for="sendamount">Amount of Senderon</label>
+            <input id="sendamount" class="forminput" type="text" placeholder="Enter Amount to send">
+                 
+             </div>
+			<div>
+                  <label for="gasPrice">Gas Price (Min. 21 GWEI)</label>
+            <input id="gasPrice" class="forminput" type="text" placeholder="Enter gas price" value="21">
+                 
+             </div>			 
+              <div>
+                  <label for="sendpwd">Session password</label>
+            <input id="sendpwd" class="forminput" type="password" placeholder="Enter password">
+                 
+             </div>
+			
+              <div>
+              <button type="submit" class="sbutton" id="createtransferSubmit">Send</button>
+            </div>
+          </form>
+          <div id="modalLoaderp">
+              <i class="fa fa-spinner fa-3x fa-spin" aria-hidden="true"></i>
+              
+          </div>
+            <hr/>
+           <div>Please enter Wallet Password created for this session, in the in the password field. You must have enough Ether in this same wallet to cover transaction fees</div>
+          <hr/>
+         
+      
+      </div>
+
+  </div>
+
+</div>
+
+
+
+ <script src="js/lightwallet.min.js"></script>
+ <script src="js/web3.min.js"></script>
+ <script src="js/async.min.js"></script>
+ <script src="js/ethwallet2.js"></script>
+ <script src="js/wallets.js"></script>
+ <script src="js/exLinksHandler.js"></script>
+
+
+	
+    <script>
+      // You can also require other files to run in this process
+      require('../renderer.js')
+    </script>
+  </body>
+</html>

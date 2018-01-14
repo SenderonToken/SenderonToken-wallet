@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Senderon Wallet</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> 
+  </head>
+  <body>
+  <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+  <script src="js/senderon.js"></script>
+ <script src="js/jquery-ui.min.js"></script>
+
+
+<div class = "container">
+    <div class="bg-contain">
+        <div class="tpoverlay">
+        <div id="confrlogo" >
+            <span class="wave-heading1" >SenderonToken WALLET</span>
+        </div>
+        <div class="wave-heading3">
+            <span class="auth" id="openLoginModal"><a href="javascript:void(0)">Create New Wallet</a></span>
+            | 
+            <span class="auth" id="openRegModal"><a href="javascript:void(0)">Import Wallet</a></span>
+        </div>
+        </div>
+    </div>
+     
+
+    
+    <footer>
+        <div class="wave-heading3 inline" id="copyright"> 
+            Copyright &copy 2018 SenderonToken All rights reserved
+        </div>
+        <div class="social-media inline">
+            <div class="inline fb">
+                <a href="https://www.reddit.com/r/Senderon/"><i class="fa fa-reddit fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="inline tt">
+                <a href="https://twitter.com/SenderonToken"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="inline bt">
+                <a href="https://bitcointalk.org/index.php?topic=2116446.0"><i class="fa fa-bitcoin fa-3x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    
+    </footer>
+
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+     <div class="modal-header">
+        <span class="close">X</span>
+        <h2>New Wallet</h2>
+      </div>
+      <div class="modal-body">
+        
+        <div id='entinp'>
+            <label for="userEntropy">Entropy (Optional)</label>
+          <input class="forminput" type="text" placeholder="Type Random Text Here" id="userEntropy">
+          </div>
+         <div id='pwdinp'>
+            <label for="Crptpass">Create Password</label>
+          <input class="forminput" type="password" placeholder="Enter Password" id="Crptpass" tabindex="2">
+          </div>
+           <span class="keep-me-login" id="keep-me-login">
+               Password will be used to encrypt your Seed for this session only!. You can use a new password when you want to Access an existing Wallet</span>
+          <div >
+           <div id="modalLoader" style="display:none;">
+              <i class="fa fa-spinner fa-3x fa-spin" aria-hidden="true"></i>
+              
+          </div>   
+         <button  onclick="newWallet()"  class="sbutton" id="genbutton">Submit </button>
+          </div> 
+         
+      </div>
+
+  </div>
+
+</div>
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+     <div class="modal-header">
+        <span class="close">X</span>
+        <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i><h2>Existing Wallet</h2>
+      </div>
+      <div class="modal-body">                  
+          
+          <div>
+              <label for="seedm">Seed</label>
+        <input class="forminput"  type="text" autofocus placeholder="Enter Seed" id="seedm">
+          </div>
+          <div>
+              <label for="exCrpPwd">Create Password</label>
+        <input class="forminput"  type="password" autofocus placeholder="Enter Password"  id="exCrpPwd" >
+          </div>
+           
+          
+           <span class="keep-me-login">
+              Password will be used to encrypt your Seed for this session only!</span>
+          <div>
+             
+         <button class="sbutton" onclick="setSeed()">Go to Dashboard ></button>
+          </div> 
+      </div>
+
+  </div>
+
+</div>
+ <script src="js/main.js"></script>
+ <script src="js/lightwallet.min.js"></script>
+ <script src="js/web3.min.js"></script>
+ <script src="js/hooked-web3-provider.js"></script>
+ <script src="js/async.min.js"></script>
+ <script src="js/ethwallet.js"></script>
+ <script src="js/exLinksHandler.js"></script>
+
+
+	
+    <script>
+      // You can also require other files to run in this process
+      require('../renderer.js')
+    </script>
+  </body>
+</html>
